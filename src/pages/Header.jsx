@@ -8,6 +8,7 @@ import Banner2 from "../components/banner/Banner2";
 const Header = () => {
   return (
     <section>
+      <h1>Hello</h1>
       {/* this is first section  */}
       <section>
         <div className={style.logo}>
