@@ -12,7 +12,7 @@ const Header = () => {
         <div className={style.logo}>
           <Logo />
         </div>
-        <div>
+        <div className={style.contactDetailHeader}>
           <ContactDetailHeader />
         </div>
         <div>
@@ -20,7 +20,7 @@ const Header = () => {
         </div>
       </section>
       {/* this section 2  */}
-      <section>
+      <section className={style.bagImage}>
         <Banner />
       </section>
     </section>
