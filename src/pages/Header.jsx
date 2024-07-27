@@ -1,7 +1,7 @@
 import React from "react";
-import NavbarBar from "../components/header/NavbarBar";
-import ContactDetailHeader from "../components/header/ContactDetailHeader";
-import Logo from "../components/header/Logo";
+import NavbarBar from "../components/NavbaR/NavbarBar";
+import ContactDetailHeader from "../components/NavbaR/ContactDetailHeader";
+import Logo from "../components/NavbaR/Logo";
 import style from "../style/header.module.css";
 import Banner from "../components/banner/Banner";
 const Header = () => {
