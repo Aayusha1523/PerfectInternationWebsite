@@ -1,4 +1,3 @@
-import React from "react";
 import ImageMAINbody from "../components/MainBody/ImageMAINbody";
 
 const MainBody = () => {

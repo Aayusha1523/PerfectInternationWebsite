@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./MainCss.module.css";
 
 const ImageMAINbody = () => {

@@ -1,5 +1,3 @@
-import React from "react";
-
 const ContactDetailHeader = () => {
   return (
     <div className="mt-3">

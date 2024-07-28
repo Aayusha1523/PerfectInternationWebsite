@@ -1,9 +1,8 @@
-import React from "react";
-import NavbarBar from "../components/NavbaR/NavbarBar";
+import Banner from "../components/banner/Banner";
 import ContactDetailHeader from "../components/NavbaR/ContactDetailHeader";
 import Logo from "../components/NavbaR/Logo";
+import NavbarBar from "../components/NavbaR/NavbarBar";
 import style from "../style/header.module.css";
-import Banner from "../components/banner/Banner";
 const Header = () => {
   return (
     <section>

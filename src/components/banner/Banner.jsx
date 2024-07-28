@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { RiArrowDownSLine } from "react-icons/ri";
 const Banner = () => {
