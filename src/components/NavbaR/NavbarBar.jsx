@@ -1,9 +1,11 @@
-import React from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 const NavbarBar = () => {
   return (
     <div>
-      <ul className="d-flex justify-content-center gap-4  " style={{listStyle:"none"}}>
+      <ul
+        className="d-flex justify-content-center align-items-center gap-4 py-4"
+        style={{ listStyle: "none" }}
+      >
         <li>Home</li>
         <li>About-us</li>
         <li>

@@ -1,9 +1,8 @@
-import React from "react";
-import NavbarBar from "../components/header/NavbarBar";
-import ContactDetailHeader from "../components/header/ContactDetailHeader";
-import Logo from "../components/header/Logo";
-import style from "../style/header.module.css";
 import Banner from "../components/banner/Banner";
+import ContactDetailHeader from "../components/NavbaR/ContactDetailHeader";
+import Logo from "../components/NavbaR/Logo";
+import NavbarBar from "../components/NavbaR/NavbarBar";
+import style from "../style/header.module.css";
 const Header = () => {
   return (
     <section>
@@ -12,7 +11,7 @@ const Header = () => {
         <div className={style.logo}>
           <Logo />
         </div>
-        <div>
+        <div className={style.contactDetailHeader}>
           <ContactDetailHeader />
         </div>
         <div>
@@ -20,7 +19,7 @@ const Header = () => {
         </div>
       </section>
       {/* this section 2  */}
-      <section>
+      <section className={style.bagImage}>
         <Banner />
       </section>
     </section>
