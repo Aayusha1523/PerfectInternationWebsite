@@ -3,9 +3,9 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Header from "./pages/Header";
-import About from "./About";
+import About from "./pages/About";
 import Contact from "./Contact";
-import Review from "./Images/ Clients Review .png"
+import Review from "/Images/ Clients Review .png"
 
 
 
@@ -16,7 +16,7 @@ function App() {
     <>
       <Header />
      <About/> 
-     <Contact/>
+    
     </>
   );
 }

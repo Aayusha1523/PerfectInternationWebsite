@@ -1,12 +1,12 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ReactTyped } from "react-typed";
-import "./style/about.css";
-import Logo from "./Images/Perfect logo.jpg";
-import Banner from "./Images/pexels-photo-890550.jpeg"
-import Mission from "./Images/pexels-photo-4365396.webp"
-import Vision from "./Images/pexels-photo-890550.jpeg"
-import Goal from "./Images/pexels-photo-262438.webp"
+import "../style/about.css";
+import Logo from "/Images/Perfect logo.jpg";
+import Banner from "/Images/pexels-photo-890550.jpeg";
+import Mission from "/Images/pexels-photo-4365396.webp";
+import Vision from "/Images/pexels-photo-890550.jpeg";
+import Goal from "/Images/pexels-photo-262438.webp";
 
 const About = () => {
   return (
@@ -73,7 +73,6 @@ const About = () => {
               {/* For IMAGE */}
               <img
                 style={{ width: "400px", height: "365px", paddingTop: "110px" }}
-          
                 src={Mission}
               ></img>
             </Col>
@@ -148,7 +147,6 @@ const About = () => {
               <img
                 className=" Vision"
                 style={{ width: "300px", height: "300px", paddingTop: "50px" }}
-            
                 src={Vision}
               ></img>
             </Col>
@@ -252,19 +250,6 @@ const About = () => {
             <h6>Subash Pandey</h6>
             <p>Reading,Uk</p>
           </Col>
-        </Row>
-      </Container>
-
-      <Container>
-        <Row>
-          {
-Blog.map((v,i))=>{
-  return
-}
-
-
-
-          }
         </Row>
       </Container>
 
