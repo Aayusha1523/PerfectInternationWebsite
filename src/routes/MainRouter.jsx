@@ -1,5 +1,6 @@
 import React from "react";
 
+import Contact from "../pages/Contact";
 import MainLayout from "../pages/MainLayout";
 
 const MainRouter = [
@@ -13,7 +14,7 @@ const MainRouter = [
       },
       {
         path: "contact",
-        element: <div>Contact</div>,
+        element: <Contact/>,
       },
     ],
   },

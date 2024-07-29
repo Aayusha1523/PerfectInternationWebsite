@@ -5,8 +5,8 @@ import MainBody from "./pages/MainBody";
 function App() {
   return (
     <>
-      <Header />
-
+    
+      
       <MainBody />
     </>
   );
