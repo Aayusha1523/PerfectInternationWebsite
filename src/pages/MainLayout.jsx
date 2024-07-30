@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet, useLocation } from "react-router-dom";
 
 import NavbarBar from "../components/NavbaR/NavbarBar";
-import Header from "./Header";
+import Homepage from "./Homepage";
 
 const MainLayout = () => {
   const location = useLocation();
@@ -11,7 +11,7 @@ const MainLayout = () => {
   return (
     <>
       <NavbarBar />
-      {isHomePage ? <Header /> : <Outlet />}
+      {isHomePage ? <Homepage /> : <Outlet />}
       <div>FOoter</div>
     </>
   );
