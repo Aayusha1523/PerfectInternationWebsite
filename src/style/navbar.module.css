@@ -6,8 +6,8 @@
 }
 
 .contactDetailHeader {
-  background: #0959da;
-  color: #ffffff;
+  background: var(--main-Color);
+  color: var(--secondary-Color);
   padding: 0.3rem 0;
 }
 .NavbarContainer {
@@ -17,12 +17,28 @@
   z-index: 999;
 }
 .NavbarUll {
-  /* d-flex justify-content-center align-items-center gap-4 py-4 */
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 2em 0;
+  padding: 2em 0 1rem 0;
   list-style: none;
   background-color: white;
+  /* background-color: var(--main-Color); */
+}
+
+.NavbarUll li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--main-Color);
+  margin: auto;
+  width: 0%;
+}
+
+.NavbarUll li:hover::after {
+  width: 100%;
+
+  transition: 0.5s;
 }

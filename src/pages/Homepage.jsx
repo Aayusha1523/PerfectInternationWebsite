@@ -2,13 +2,11 @@ import React from "react";
 
 import Banner from "../components/banner/Banner";
 import ImageMAINbody from "../components/MainBody/ImageMAINbody";
-import style from "../style/home.module.css"
+import style from "../style/home.module.css";
 const Homepage = () => {
   return (
     <>
-      <div className={style.bagImage}>
-        <Banner />
-      </div>
+      <Banner />
 
       <section>
         <div
@@ -23,7 +21,7 @@ const Homepage = () => {
         </div>
 
         {/* second section of MainBody  */}
-        <ImageMAINbody />
+        {/* <ImageMAINbody /> */}
       </section>
     </>
   );
