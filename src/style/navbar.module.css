@@ -10,3 +10,19 @@
   color: #ffffff;
   padding: 0.3rem 0;
 }
+.NavbarContainer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.NavbarUll {
+  /* d-flex justify-content-center align-items-center gap-4 py-4 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2em 0;
+  list-style: none;
+  background-color: white;
+}
