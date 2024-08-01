@@ -1,40 +1,22 @@
-import { Button, Col, Container, Row } from "react-bootstrap";
-import { RiArrowDownSLine } from "react-icons/ri";
+import { useState } from "react";
+import { Container } from "react-bootstrap";
+
+import style from "../../style/home.module.css";
+
 const Banner = () => {
+  const [loadingIframe, setLoadingIframe] = useState(true);
   return (
-    <Container fluid>
-      <Row>
-        <Col
-          xs={8}
-          className="d-flex flex-column  justify-content-center p-5 gap-4"
-        >
-          <div id="logo">
-            <h1>FLAG OF COUNTRY</h1>
-          </div>
+    <Container fluid className={style.Bannervideocontainer}>
+      <video
+        src="/Video/BannerVideo.mp4"
+        autoPlay
+        loop
+        muted
+        className={style.BannerVideo}
+        onLoadedData={() => setLoadingIframe(false)}
+      ></video>
 
-          <h1>
-            Perfect International Education <br /> Consultancy{" "}
-          </h1>
-          <h4>
-            Let us help you provide a proper guidance to find a right spot{" "}
-            <br />
-            for your career.
-          </h4>
-          <Button className="w-25">
-            select country <RiArrowDownSLine />
-          </Button>
-        </Col>
-
-        <Col>
-          <img
-            src="/Image/eagle.jpg"
-            alt=""
-            width={"500px"}
-            height={"660px"}
-            style={{ border: "3px solid red", marginTop: "2rem" }}
-          />
-        </Col>
-      </Row>
+      {loadingIframe ? <p>Loading Video...</p> : null}
     </Container>
   );
 };
