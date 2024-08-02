@@ -1,4 +1,20 @@
-.backgroundMainBody {
-  background-image: url("/Image/eagle.jpg");
-  height: 250px;
+.textOperate {
+  font-size: 90px;
+  margin-bottom: 3rem;
+}
+.textOperate::after {
+  content: "";
+  height: 7px;
+  background-color: var(--main-Color);
+  display: block;
+}
+
+/* Carousel css  */
+.customCarousel .carouselItem {
+  height: 100px; /* Adjust this value as needed */
+}
+
+.customCarousel img {
+  object-fit: cover;
+  height: 100%;
 }
