@@ -10,7 +10,7 @@ import studyInUSA from "../../../public/Image/Soft Yellow Geometric Business Tip
 import style from "./MainCss.module.css";
 const ImageCarouse = () => {
   return (
-    <Carousel fade className={style.customCarousel}>
+    <Carousel fade className={style.customCarousel} interval={800}>
       <Carousel.Item>
         <img src={studyInUSA} alt="" className="d-block w-100" />
       </Carousel.Item>

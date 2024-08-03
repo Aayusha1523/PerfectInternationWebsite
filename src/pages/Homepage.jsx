@@ -14,7 +14,7 @@ const Homepage = () => {
           className="text-center p-5 "
           style={{ height: "200px" }}
         >
-          <h1>
+          <h1 data-aos="zoom-in">
             Let us ensure a more successful and enjoyable experience in{" "}
             <br></br> your new environment
           </h1>
@@ -24,7 +24,7 @@ const Homepage = () => {
           <ImageCarouse />
         </div>
         {/* How we Operate  */}
-        <div className="mt-5">
+        <div className="mt-5" data-aos="zoom-in">
           <HowWeOperate />
         </div>
       </section>

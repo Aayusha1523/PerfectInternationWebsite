@@ -16,15 +16,21 @@
   right: 0;
   z-index: 999;
 }
+
+#FirstNavSection {
+  background: var(--secondary-Color);
+}
+
 .NavbarUll {
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1; /*  to keep the links in center  */
   gap: 2rem;
   padding: 2em 0 1rem 0;
   list-style: none;
-  background-color: white;
+
   /* background-color: var(--main-Color); */
 }
 
@@ -41,4 +47,11 @@
   width: 100%;
 
   transition: 0.5s;
+}
+
+/* register Button css  */
+.registerBtn {
+  padding: 0.8rem 1rem;
+  font-weight: var(--boldFontweight);
+  margin-right: 2rem;
 }

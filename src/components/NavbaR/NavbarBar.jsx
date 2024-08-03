@@ -1,6 +1,9 @@
+import { Button } from "react-bootstrap";
+
 import style from "../../style/navbar.module.css";
 import ContactDetailHeader from "./ContactDetailHeader";
 import Logo from "./Logo";
+import RegisterBtn from "./RegisterBtn";
 const NavbarBar = () => {
   return (
     <section className={style.NavbarContainer}>
@@ -10,18 +13,22 @@ const NavbarBar = () => {
       <div className={style.contactDetailHeader}>
         <ContactDetailHeader />
       </div>
-      <div id="FirstNavSection">
-        <ul
-          // className="d-flex justify-content-center align-items-center gap-4 py-4"
-          className={style.NavbarUll}
-        >
+      <div
+        id={style.FirstNavSection}
+        className="d-flex justify-content-center align-items-center"
+      >
+        <ul className={style.NavbarUll}>
           <li>Home</li>
           <li>About-us</li>
           <li>Services</li>
           <li>Coourse</li>
           <li>PTE/IETS</li>
-          <li>Form</li>
         </ul>
+        <div className={style.registerBtn}>
+          <a href="/contact" className="text-decoration-none">
+            <RegisterBtn />
+          </a>
+        </div>
       </div>
     </section>
   );
