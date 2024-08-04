@@ -1,12 +1,10 @@
-import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ReactTyped } from "react-typed";
-import "../style/about.css";
-import Logo from "../assets/Images/Perfect logo.jpg";
-import Banner from "../assets/Images/pexels.jpeg";
-import Mission from "../assets/Images/missi.webp";
-import Vision from "../assets/Images/vision.jpeg";
 import Goal from "../assets/Images/goal.webp";
+import Mission from "../assets/Images/missi.webp";
+import Logo from "../assets/Images/Perfect logo.jpg";
+import Vision from "../assets/Images/vision.jpeg";
+import "../style/about.css";
 
 const About = () => {
   return (
@@ -24,52 +22,50 @@ const About = () => {
           />
         </div>
       </div>
-
       <div className="down">
         <p>
           Let us help you provide a proper guidance to find a right spot for
           your career.
         </p>
       </div>
-
       {/* THE INTRODUCTION ALONG WITH LOGO */}
-      <div style={{ paddingTop: "2rem" }} className="container">
-        <Container>
-          <Row>
-            <Col className="Intro" lg="7" md="3">
-              <h4 style={{ color: "darkblue", fontSize: "28px" }}>
-                Perfect International Consultancy: Your Gateway to Global
-                Education
-              </h4>
-              <p style={{ paddingTop: "6px", fontSize: "18px" }}>
-                {" "}
-                Welcome to Perfect International Consultancy, your trusted
-                partner in realizing academic dreams abroad. With a steadfast
-                commitment to excellence, we specialize in facilitating
-                placements for students seeking to study in the UK, America,
-                Australia, Canada, and New Zealand.
-              </p>
-            </Col>
-            <Col gx="1" md="2"></Col>
+      <Container>
+        <Row>
+          <Col lg="7" md="3">
+            {" "}
+            <p style={{ color: "darkblue", fontSize: "28px" }}>
+              Perfect International Consultancy: Your Gateway to Global
+              Education
+            </p>
+            <p style={{ fontSize: "18px" }}>
+              {" "}
+              Welcome to Perfect International Consultancy, your trusted partner
+              in realizing academic dreams abroad. With a steadfast commitment
+              to excellence, we specialize in facilitating placements for
+              students seeking to study in the UK, America, Australia, Canada,
+              and New Zealand.
+            </p>
+          </Col>
+          <Col gx="1" md="2"></Col>
+          <Col lg="2" md="2">
+            <img
+              className=" Logo"
+              style={{
+                width: "200px",
+                height: "200px",
+              }}
+              src={Logo}
+            />
+          </Col>
+        </Row>
+      </Container>
 
-            <Col lg="2" md="2">
-              {/* For IMAGE */}
-              <img
-                className=" Logo"
-                style={{ width: "300px", height: "300px", paddingTop: "110px" }}
-                src={Logo}
-              ></img>
-            </Col>
-          </Row>
-        </Container>
-      </div>
       {/* Intro Ended Here */}
-
       {/* MISSION STARTED */}
       <div className="Mission">
         <Container>
           <Row style={{ padding: "30px" }}>
-            <Col lg="2" md="2">
+            <Col>
               {/* For IMAGE */}
               <img
                 style={{ width: "400px", height: "365px", paddingTop: "110px" }}
@@ -77,9 +73,7 @@ const About = () => {
               ></img>
             </Col>
 
-            <Col gx="2" md="2" style={{}}></Col>
-
-            <Col className="Intro" lg="7" md="3">
+            <Col className="Intro">
               <h4 style={{ color: "darkblue", fontSize: "44px" }}>
                 OUR MISSION
               </h4>
@@ -115,9 +109,7 @@ const About = () => {
         </Container>
         {/* MISSION ENDED */}
       </div>
-
       {/* VISION */}
-
       <div style={{ paddingTop: "2rem" }} className="vision">
         <Container>
           <Row>
@@ -154,12 +146,11 @@ const About = () => {
         </Container>
       </div>
       {/* VISION ENDS HERE */}
-
       {/* GOAL STARTED */}
       <div className="Mission">
         <Container>
-          <Row style={{ padding: "30px" }}>
-            <Col lg="2" md="2">
+          <Row>
+            <Col md="12" lg="6">
               {/* For IMAGE */}
               <img
                 style={{ width: "400px", height: "365px", paddingTop: "110px" }}
@@ -168,9 +159,7 @@ const About = () => {
               ></img>
             </Col>
 
-            <Col gx="2" md="2"></Col>
-
-            <Col className="Intro" lg="7" md="3">
+            <Col className="Intro" md="12" lg="6">
               <h4 style={{ color: "darkblue", fontSize: "44px" }}>OUR GOAL</h4>
 
               <div className="card">
@@ -202,7 +191,6 @@ const About = () => {
         </Container>
         {/* GOAL ENDED */}
       </div>
-
       {/* Our team */}
       <Container>
         <h1 style={{ alignItems: "center" }}>OUR TEAM</h1>
@@ -252,7 +240,6 @@ const About = () => {
           </Col>
         </Row>
       </Container>
-
       {/* Ends Here */}
     </>
   );

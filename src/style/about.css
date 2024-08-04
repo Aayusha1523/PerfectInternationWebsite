@@ -1,5 +1,5 @@
 .Banner {
-  background-image: url("/Images/pexels-photo-890550.jpeg");
+  background-image: url("../assets/Images/pexels.jpeg");
   background-size: cover;
   background-position: center;
   height: 70svh;
@@ -33,10 +33,6 @@
 
 .Intro {
   padding-top: 2rem;
-}
-.Logo {
-  position: absolute;
-  top: 70%;
 }
 
 .card {
