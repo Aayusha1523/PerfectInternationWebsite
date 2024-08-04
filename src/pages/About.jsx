@@ -2,11 +2,11 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ReactTyped } from "react-typed";
 import "../style/about.css";
-import Logo from "/Images/Perfect logo.jpg";
-import Banner from "/Images/pexels-photo-890550.jpeg";
-import Mission from "/Images/pexels-photo-4365396.webp";
-import Vision from "/Images/pexels-photo-890550.jpeg";
-import Goal from "/Images/pexels-photo-262438.webp";
+import Logo from "../assets/Images/Perfect logo.jpg";
+import Banner from "../assets/Images/pexels.jpeg";
+import Mission from "../assets/Images/missi.webp";
+import Vision from "../assets/Images/vision.jpeg";
+import Goal from "../assets/Images/goal.webp";
 
 const About = () => {
   return (
@@ -164,7 +164,7 @@ const About = () => {
               <img
                 style={{ width: "400px", height: "365px", paddingTop: "110px" }}
                 // src={Goal}
-                src={Logo}
+                src={Goal}
               ></img>
             </Col>
 
