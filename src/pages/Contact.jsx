@@ -4,7 +4,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <>
+    <div className="">
     <div className="container">
       <form>
         <h1>CONTACT FORM</h1>
@@ -69,8 +69,14 @@ const Contact = () => {
 
       </form>
     </div>
-  </>
+  </div>
   )
 }
 
 export default Contact
+
+
+// git hub ma push garna paryo bhaney 
+
+// git add git commit 
+// git 

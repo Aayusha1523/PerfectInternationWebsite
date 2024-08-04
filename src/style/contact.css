@@ -2,7 +2,8 @@
     margin-top: 0px;
     padding:0px;
     box-sizing: border-box;
+    background-image: url("./");
 }
 h1{
-    color:rgb(155, 127, 255)
+    color:rgb(155, 127, 255);
 }
