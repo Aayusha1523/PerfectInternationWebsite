@@ -1,5 +1,6 @@
 import React from "react";
 
+import About from "../pages/About";
 import MainLayout from "../pages/MainLayout";
 
 const MainRouter = [
@@ -9,7 +10,7 @@ const MainRouter = [
     children: [
       {
         path: "about",
-        element: <div>ABout</div>,
+        element: <About />,
       },
       {
         path: "contact",
