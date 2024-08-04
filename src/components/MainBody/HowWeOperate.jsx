@@ -1,7 +1,6 @@
 import React from "react";
 
-import howWeOperateImage from "/Image/Soft Yellow Geometric Business Tips Poster/how we operated.png";
-
+import howWeOperateImage from "../../assets/Image/Soft Yellow Geometric Business Tips Poster/how we operated.png";
 import style from "./MainCss.module.css";
 const HowWeOperate = () => {
   return (

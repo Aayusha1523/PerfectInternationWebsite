@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Container } from "react-bootstrap";
 
+import BannerVideo from "../../assets/Video/BannerVideo.mp4";
 import style from "../../style/home.module.css";
 
 const Banner = () => {
@@ -8,7 +9,7 @@ const Banner = () => {
   return (
     <Container fluid className={style.Bannervideocontainer}>
       <video
-        src="/Video/BannerVideo.mp4"
+        src={BannerVideo}
         autoPlay
         loop
         muted

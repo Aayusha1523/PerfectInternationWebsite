@@ -1,12 +1,11 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 
-import studyInNewZeland from "/Image/Soft Yellow Geometric Business Tips Poster/studyInNewZeland.png";
-
-import studyInAustralia from "../../../public/Image/Soft Yellow Geometric Business Tips Poster/studyInAustralia.png";
-import studyInCanada from "../../../public/Image/Soft Yellow Geometric Business Tips Poster/studyInCanada.png";
-import studyInUk from "../../../public/Image/Soft Yellow Geometric Business Tips Poster/studyInUK.png";
-import studyInUSA from "../../../public/Image/Soft Yellow Geometric Business Tips Poster/studyInUsa.png";
+import studyInAustralia from "../../assets/Image/Soft Yellow Geometric Business Tips Poster/studyInAustralia.png";
+import studyInCanada from "../../assets/Image/Soft Yellow Geometric Business Tips Poster/studyInCanada.png";
+import studyInNewZeland from "../../assets/Image/Soft Yellow Geometric Business Tips Poster/studyInNewZeland.png";
+import studyInUk from "../../assets/Image/Soft Yellow Geometric Business Tips Poster/studyInUK.png";
+import studyInUSA from "../../assets/Image/Soft Yellow Geometric Business Tips Poster/studyInUsa.png";
 import style from "./MainCss.module.css";
 const ImageCarouse = () => {
   return (
