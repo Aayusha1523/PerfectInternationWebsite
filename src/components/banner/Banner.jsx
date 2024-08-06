@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Container } from "react-bootstrap";
 
 import BannerVideo from "../../assets/Video/BannerVideo.mp4";
-import style from "../../style/home.module.css";
+// import style from "../../style/home.module.css";
+import style from "./banner.module.css";
 
 const Banner = () => {
   const [loadingIframe, setLoadingIframe] = useState(true);

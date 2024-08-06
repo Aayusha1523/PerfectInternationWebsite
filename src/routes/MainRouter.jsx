@@ -2,6 +2,7 @@ import React from "react";
 
 import About from "../pages/About";
 import MainLayout from "../pages/MainLayout";
+import Register from "../pages/Register";
 
 const MainRouter = [
   {
@@ -15,6 +16,10 @@ const MainRouter = [
       {
         path: "contact",
         element: <div>Contact</div>,
+      },
+      {
+        path: "registeration",
+        element: <Register />,
       },
     ],
   },

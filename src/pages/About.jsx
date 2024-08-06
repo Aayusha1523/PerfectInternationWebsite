@@ -11,7 +11,7 @@ import Vision from "../assets/Images/vision.jpeg";
 const About = () => {
   return (
     <>
-      <div className="blurbox">
+      <div className="blurbox mb-5">
         <div className="Banner"></div>
         <div className="typeds">
           <ReactTyped
@@ -24,12 +24,7 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="down">
-        <p>
-          Let us help you provide a proper guidance to find a right spot for
-          your career.
-        </p>
-      </div>
+
       {/* THE INTRODUCTION ALONG WITH LOGO */}
       <Container>
         <Row>
