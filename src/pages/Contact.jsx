@@ -4,10 +4,11 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className="">
+    <div className="form">
     <div className="container">
       <form>
-        <h1>CONTACT FORM</h1>
+        <h1>CONTACT FORM
+        <div className="underline"></div></h1>
         <div className="input-box">
           <label>Full Name</label>
           <input
@@ -47,7 +48,7 @@ const Contact = () => {
             required
           />
         </div>
-
+<div className="input-box">
         <label htmlFor="Academic-level">Previous Academic Level</label>
         <select id="Academic" name="cars" size="3">
           <option value="SEE">SEE</option>
@@ -56,20 +57,34 @@ const Contact = () => {
           <option value="Master">Master</option>
           <option value="Phd">Phd</option>
         </select>
-
-        <div>
-        <label>Upload your Documents</label>
-        <input type="text" placeholder='Upload your documents'></input>
         </div>
 
-        <div>
+
+        <div className="input-box">
+        
+        <label>Upload your Documents</label>
+        <input type="text" placeholder='Upload your documents'></input>
+        
+        </div>
+
+
+        <div className="input-box">
             <label>Feedback</label>
             <input type="text" placeholder="Tell us about how you feel"></input>
         </div>
 
+        
+        <div className="uiverse">
+    <span className="tooltip">Thank you</span>
+    <span>
+        Tooltip
+    </span>
+</div>
+
       </form>
     </div>
   </div>
+ 
   )
 }
 

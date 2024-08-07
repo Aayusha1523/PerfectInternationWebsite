@@ -12,7 +12,7 @@ const MainLayout = () => {
     <>
       <NavbarBar />
       {isHomePage ? <Header /> : <Outlet />}
-      <div>FOoter</div>
+      
     </>
   );
 };
