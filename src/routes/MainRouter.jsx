@@ -18,7 +18,7 @@ const MainRouter = [
         element: <div>Contact</div>,
       },
       {
-        path: "registeration",
+        path: "register",
         element: <Register />,
       },
     ],
