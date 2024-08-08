@@ -18,16 +18,35 @@ const NavbarBar = () => {
         className="d-flex justify-content-center align-items-center"
       >
         <ul className={style.NavbarUll}>
-          <li>Home</li>
-          <li>About-us</li>
-          <li>Services</li>
-          <li>Coourse</li>
-          <li>PTE/IETS</li>
+          <li>
+            {" "}
+            <a href="/"> Home </a>{" "}
+          </li>
+          <li>
+            {" "}
+            <a href="/about"> About-us</a>
+          </li>
+          <li>
+            {" "}
+            <a href="#services">Services </a>
+          </li>
+          <li>
+            {" "}
+            <a href="#course"> Course</a>
+          </li>
+          <li>
+            {" "}
+            <a href=""> PTE/IETS</a>
+          </li>
+          <li>
+            {" "}
+            <a href="/contact"> Contact</a>
+          </li>
         </ul>
         <div className={style.registerBtn}>
-          <a href="/contact" className="text-decoration-none">
-            <RegisterBtn />
-          </a>
+          {/* <a href="/" className="text-decoration-none"> */}
+          <RegisterBtn />
+          {/* </a> */}
         </div>
       </div>
     </section>

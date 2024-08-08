@@ -1,10 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import style from "./Button.module.css";
 
 const RegisterBtn = () => {
+  const navigate = useNavigate();
   return (
-    <button className={style.cssbuttonsIoButton}>
+    <button
+      className={style.cssbuttonsIoButton}
+      onClick={() => navigate("/register")}
+    >
       Register Now
       <div className={style.icon}>
         <svg
