@@ -5,6 +5,7 @@ import Mission from "../assets/Images/missi.webp";
 import Logo from "../assets/Images/Perfect logo.jpg";
 import Vision from "../assets/Images/vision.jpeg";
 import "../style/about.css";
+import teamInfo from "../components/about/teamInfo";
 
 const About = () => {
   return (
@@ -90,7 +91,7 @@ const About = () => {
                   Our mission is to provide comprehensive and personalized
                   consultancy services that ensure each student finds the
                   perfect educational opportunity fitting their aspirations and
-                  capabilities.We value the uniqueness of each student's
+                  capabilities.We value the uniqueness of each students
                   ambitions and endeavors to provide tailored solutions that
                   enhance their academic and personal growth. By fostering
                   relationships with students, families, and educational
@@ -100,8 +101,8 @@ const About = () => {
                   aspirations abroad, thereby shaping a brighter future for
                   themselves and contributing positively to global communities.
                   Perfect International Education Consultancy is not just about
-                  sending students abroad; it's about guiding them towards a
-                  path of academic excellence and personal fulfillment.
+                  sending students abroad; its about guiding them towards a path
+                  of academic excellence and personal fulfillment.
                 </p>
               </div>
             </Col>
@@ -176,7 +177,7 @@ const About = () => {
                   consultancy services. These goals reflect our commitment to
                   excellence, student success, and global engagement:To provide
                   personalized and comprehensive guidance tailored to each
-                  student's unique academic and career aspirations,To facilitate
+                  students unique academic and career aspirations,To facilitate
                   access to top-tier educational institutions in the UK, USA,
                   Australia, Canada, and New Zealand. To ensure students are
                   well-prepared for the academic rigor and cultural experiences
@@ -195,49 +196,20 @@ const About = () => {
       <Container>
         <h1 style={{ alignItems: "center" }}>OUR TEAM</h1>
         <Row>
-          <Col className="people" lg="2" md="2">
-            <img
-              style={{ width: "200px", padding: "15px" }}
-              // src={Vision}
-              src={Logo}
-            ></img>
-            <h4>Director</h4>
-            <h6>Subash Pandey</h6>
-            <p>Reading,Uk</p>
-          </Col>
-
-          <Col className="people" lg="2" md="2">
-            <img
-              style={{ width: "200px", padding: "15px" }}
-              // src={Vision}
-              src={Logo}
-            ></img>
-            <h4>Director</h4>
-            <h6>Laxmi Poudel</h6>
-            <p>Reading,Uk</p>
-          </Col>
-
-          <Col className="people" lg="2" md="2">
-            <img
-              style={{ width: "200px", padding: "15px" }}
-              // src={Vision}
-              src={Logo}
-            ></img>
-            <h4>Director</h4>
-            <h6>Subash Pandey</h6>
-            <p>Reading,Uk</p>
-          </Col>
-
-          <Col className="people" lg="2" md="2">
-            <img
-              style={{ width: "200px", padding: "15px" }}
-              // src={Vision}
-              src={Logo}
-            ></img>
-            <h4>Director</h4>
-            <h6>Subash Pandey</h6>
-            <p>Reading,Uk</p>
-          </Col>
+          {teamInfo.map((item) => {
+            return (
+              <Col className="people" lg="2" md="2" key={item.id}>
+                <img
+                  style={{ width: "200px", padding: "15px" }}
+                  // src={Vision}
+                  src={Logo}
+                ></img>
+                <h4>{item.postion}</h4>
+                <h6>{item.name}</h6>
+                <p>Reading,Uk</p>
+              </Col>
+            );
+          })}
         </Row>
       </Container>
       {/* Ends Here */}
