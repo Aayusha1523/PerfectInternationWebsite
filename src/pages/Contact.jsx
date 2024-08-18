@@ -1,9 +1,17 @@
 import "../style/contact.css"
+import { useForm, ValidationError } from '@formspree/react';
 
 import React from 'react'
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("xeojkonk");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
   return (
+    
+
+    
     <div className="form">
     <div className="container">
       <form>
@@ -60,12 +68,9 @@ const Contact = () => {
         </div>
 
 
-        <div className="input-box">
+     
         
-        <label>Upload your Documents</label>
-        <input type="text" placeholder='Upload your documents'></input>
-        
-        </div>
+
 
 
         <div className="input-box">
