@@ -12,7 +12,9 @@ const MainLayout = () => {
   return (
     <>
       <NavbarBar />
-      {isHomePage ? <Homepage /> : <Outlet />}
+      <main style={{ minHeight: "100svh" }}>
+        {isHomePage ? <Homepage /> : <Outlet />}
+      </main>
       <Footer />
     </>
   );

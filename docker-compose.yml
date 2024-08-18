@@ -1,0 +1,11 @@
+# version: "2"
+services:
+  frontend:
+    build: .
+    ports:
+      - "5173:5173" # Expose the Vite dev server port
+    volumes:
+      - .:/app # Mount the project directory into the container
+      - /app/node_modules # Prevent mounting node_modules from host
+    stdin_open: true
+    tty: true

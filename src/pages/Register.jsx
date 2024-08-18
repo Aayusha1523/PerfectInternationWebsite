@@ -72,11 +72,6 @@ const Register = () => {
         <option value="Phd">Phd</option>
       </select> */}
 
-      <div>
-        <label>Upload your Documents</label>
-        <input type="file" placeholder="Upload your documents" name="file" />
-      </div>
-
       {/* <div>
         <label>Feedback</label>
         <input type="text" placeholder="Tell us about how you feel"></input>
