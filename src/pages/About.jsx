@@ -1,4 +1,5 @@
 import "../style/about.css";
+import "../style/about.css";
 
 import { Col, Container, Row } from "react-bootstrap";
 import { ReactTyped } from "react-typed";
@@ -7,6 +8,7 @@ import Goal from "../assets/Images/goal.webp";
 import Mission from "../assets/Images/missi.webp";
 import Logo from "../assets/Images/Perfect logo.jpg";
 import Vision from "../assets/Images/vision.jpeg";
+import teamInfo from "../components/about/teamInfo";
 
 const About = () => {
   return (
@@ -97,7 +99,7 @@ const About = () => {
                   aspirations abroad, thereby shaping a brighter future for
                   themselves and contributing positively to global communities.
                   Perfect International Education Consultancy is not just about
-                  sending students abroadits about guiding them towards a path
+                  sending students abroad; its about guiding them towards a path
                   of academic excellence and personal fulfillment.
                 </p>
               </div>
@@ -192,49 +194,20 @@ const About = () => {
       <Container>
         <h1 style={{ alignItems: "center" }}>OUR TEAM</h1>
         <Row>
-          <Col className="people" lg="2" md="2">
-            <img
-              style={{ width: "200px", padding: "15px" }}
-              // src={Vision}
-              src={Logo}
-            ></img>
-            <h4>Director</h4>
-            <h6>Subash Pandey</h6>
-            <p>Reading,Uk</p>
-          </Col>
-
-          <Col className="people" lg="2" md="2">
-            <img
-              style={{ width: "200px", padding: "15px" }}
-              // src={Vision}
-              src={Logo}
-            ></img>
-            <h4>Director</h4>
-            <h6>Laxmi Poudel</h6>
-            <p>Reading,Uk</p>
-          </Col>
-
-          <Col className="people" lg="2" md="2">
-            <img
-              style={{ width: "200px", padding: "15px" }}
-              // src={Vision}
-              src={Logo}
-            ></img>
-            <h4>Director</h4>
-            <h6>Subash Pandey</h6>
-            <p>Reading,Uk</p>
-          </Col>
-
-          <Col className="people" lg="2" md="2">
-            <img
-              style={{ width: "200px", padding: "15px" }}
-              // src={Vision}
-              src={Logo}
-            ></img>
-            <h4>Director</h4>
-            <h6>Subash Pandey</h6>
-            <p>Reading,Uk</p>
-          </Col>
+          {teamInfo.map((item) => {
+            return (
+              <Col className="people" lg="2" md="2" key={item.id}>
+                <img
+                  style={{ width: "200px", padding: "15px" }}
+                  // src={Vision}
+                  src={Logo}
+                ></img>
+                <h5>{item.position}</h5>
+                <h6>{item.name}</h6>
+                <p>Reading,Uk</p>
+              </Col>
+            );
+          })}
         </Row>
       </Container>
       {/* Ends Here */}
