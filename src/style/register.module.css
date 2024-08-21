@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.mainCard {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.inputBox label {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.inputBox input {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px gray solid;
+}
