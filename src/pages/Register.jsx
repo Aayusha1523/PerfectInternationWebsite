@@ -1,16 +1,25 @@
 import { useForm, ValidationError } from "@formspree/react";
+import { useState } from "react";
 import { Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
+import Dropdown from "react-bootstrap/Dropdown";
 
 import style from "../style/register.module.css";
-const Register = () => {
-  // const [state, handleSubmit] = useForm("xeojkjwy");
-  // if (state.succeeded) {
-  //   return <p>Thanks for joining!</p>;
-  // }
 
-  function handleSubmit(value) {
-    return console.log(value);
+const Register = () => {
+  const [state, handleSubmit] = useForm("mnnaobny");
+  const [academicLevel, setAcademicLevel] = useState(""); // Store dropdown value here
+  const [studyCountry, setStudyCountry] = useState(""); //store coutry value here
+  // Handle dropdown selection
+  const handleDropdownSelect = (value) => {
+    setAcademicLevel(value);
+  };
+  const handleDropCountry = (value) => {
+    setStudyCountry(value);
+  };
+
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
   }
   return (
     <section className={style.container}>
@@ -19,7 +28,9 @@ const Register = () => {
         style={{ width: "27rem" }}
         className={style.mainCard}
       >
-        <Card.Header>Registeration Card </Card.Header>
+        <Card.Header>
+          <h3 style={{ textAlign: "center" }}> Registration</h3>{" "}
+        </Card.Header>
         <Card.Body>
           <form onSubmit={handleSubmit}>
             <div className={style.inputBox}>
@@ -27,8 +38,13 @@ const Register = () => {
               <input
                 type="text"
                 placeholder="Enter your Full Name"
-                name="Full name"
+                name="fullName"
                 required
+              />
+              <ValidationError
+                prefix="Full Name"
+                field="fullName"
+                errors={state.errors}
               />
             </div>
 
@@ -41,6 +57,11 @@ const Register = () => {
                 placeholder="Enter your address"
                 required
               />
+              <ValidationError
+                prefix="Address"
+                field="address"
+                errors={state.errors}
+              />
             </div>
 
             <div className={style.inputBox}>
@@ -52,6 +73,11 @@ const Register = () => {
                 placeholder="Enter your email"
                 required
               />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
             </div>
 
             <div className={style.inputBox}>
@@ -60,31 +86,74 @@ const Register = () => {
                 type="text"
                 className="field"
                 placeholder="Enter your phone number"
-                name="Phone Number"
+                name="phoneNumber"
                 required
               />
-            </div>
-
-            <div className={style.inputBox}>
-              <label htmlFor="Academic-level">Previous Academic Level</label>
-              <select id="Academic" name="cars" size="3">
-                <option value="SEE">SEE</option>
-                <option value="+2">+2</option>
-                <option value="Bachelors">Bachelor</option>
-                <option value="Master">Master</option>
-                <option value="Phd">Phd</option>
-              </select>
-            </div>
-
-            <div className={style.inputBox}>
-              <label>Feedback</label>
-              <input
-                type="text"
-                placeholder="Tell us about how you feel"
-                name="feedback"
+              <ValidationError
+                prefix="Phone Number"
+                field="phoneNumber"
+                errors={state.errors}
               />
             </div>
-            <Button type="submit" variant="primary">
+
+            <div className={style.inputBox}>
+              <label htmlFor="academic-level">Previous Academic Level</label>
+              <Dropdown onSelect={handleDropdownSelect}>
+                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                  {academicLevel || "Academic Level"}
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item eventKey="SEE">SEE</Dropdown.Item>
+                  <Dropdown.Item eventKey="+2">+2</Dropdown.Item>
+                  <Dropdown.Item eventKey="Bachelor">Bachelor</Dropdown.Item>
+                  <Dropdown.Item eventKey="Master">Master</Dropdown.Item>
+                  <Dropdown.Item eventKey="PHD">PHD</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+
+              <input
+                type="hidden"
+                name="academicLevel"
+                value={academicLevel}
+                required
+              />
+              <ValidationError
+                prefix="Academic Level"
+                field="academicLevel"
+                errors={state.errors}
+              />
+            </div>
+
+            <div className={style.inputBox}>
+              <label htmlFor="Country">Country to Study</label>
+
+              <Dropdown onSelect={handleDropCountry}>
+                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                  {studyCountry || "Choose Country to study"}
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item eventKey="UK">UK</Dropdown.Item>
+                  <Dropdown.Item eventKey="USA">USA</Dropdown.Item>
+                  <Dropdown.Item eventKey="Canada">Canada</Dropdown.Item>
+                  <Dropdown.Item eventKey="Austrial">Austrial</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+              <input
+                type="hidden"
+                name="Country To Study"
+                value={studyCountry}
+                required
+              />
+              <ValidationError
+                prefix="Country To Study"
+                field="Country To Study"
+                errors={state.errors}
+              />
+            </div>
+
+            <Button type="submit" variant="primary" disabled={state.submitting}>
               Submit
             </Button>
           </form>
