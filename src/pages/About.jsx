@@ -24,7 +24,6 @@ const About = () => {
           />
         </div>
       </div>
-
       {/* THE INTRODUCTION ALONG WITH LOGO */}
       <Container>
         <Row>

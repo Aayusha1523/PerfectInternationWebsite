@@ -3,6 +3,9 @@ import React from "react";
 import Banner from "../components/banner/Banner";
 import HowWeOperate from "../components/MainBody/HowWeOperate";
 import ImageCarouse from "../components/MainBody/ImageCarouse";
+import ServiceCard from "../components/Services/ServiceCard";
+
+
 const Homepage = () => {
   return (
     <>
@@ -28,6 +31,9 @@ const Homepage = () => {
           <HowWeOperate />
         </div>
       </section>
+      {/* SERVICES */}
+      <ServiceCard/>
+      
     </>
   );
 };

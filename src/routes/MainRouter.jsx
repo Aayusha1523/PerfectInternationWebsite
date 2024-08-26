@@ -21,9 +21,14 @@ const MainRouter = [
         path: "register",
         element: <Register />,
       },
+      {
+        path:"services",
+        element:<Services/>,
+      }
+,
     ],
   },
-];
+]
 
 export default MainRouter;
 
