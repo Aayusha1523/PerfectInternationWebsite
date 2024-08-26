@@ -1,4 +1,5 @@
 import "../style/about.css";
+import "../style/about.css";
 
 import { Col, Container, Row } from "react-bootstrap";
 import { ReactTyped } from "react-typed";
@@ -7,13 +8,12 @@ import Goal from "../assets/Images/goal.webp";
 import Mission from "../assets/Images/missi.webp";
 import Logo from "../assets/Images/Perfect logo.jpg";
 import Vision from "../assets/Images/vision.jpeg";
-
 const About = () => {
   return (
     <>
       <div className="blurbox mb-5">
-        <div className="Banner"></div>
-        <div className="typeds">
+        <div className="Banner-about"></div>
+        <div className="typeds-about">
           <ReactTyped
             strings={[
               "ABOUT US",
@@ -75,7 +75,7 @@ const About = () => {
                 OUR MISSION
               </h4>
 
-              <div className="card">
+              <div className="card-about">
                 <p
                   style={{
                     paddingTop: "6px",

@@ -35,6 +35,11 @@
   /* background-color: var(--main-Color); */
 }
 
+.NavbarUll a {
+  text-decoration: none;
+  color: var(--main-Color);
+}
+
 .NavbarUll li::after {
   content: "";
   display: block;

@@ -18,7 +18,7 @@ const Banner = () => {
         onLoadedData={() => setLoadingIframe(false)}
       ></video>
 
-      {loadingIframe ? <p>Loading Video...</p> : null}
+      {loadingIframe ? <h1>Loading Video...</h1> : null}
     </Container>
   );
 };
