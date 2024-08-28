@@ -99,7 +99,11 @@ const Register = () => {
             <div className={style.inputBox}>
               <label htmlFor="academic-level">Previous Academic Level</label>
               <Dropdown onSelect={handleDropdownSelect}>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                <Dropdown.Toggle
+                  variant="success"
+                  id="dropdown-basic"
+                  style={{ width: "20rem" }}
+                >
                   {academicLevel || "Academic Level"}
                 </Dropdown.Toggle>
 
@@ -129,7 +133,11 @@ const Register = () => {
               <label htmlFor="Country">Country to Study</label>
 
               <Dropdown onSelect={handleDropCountry}>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                <Dropdown.Toggle
+                  variant="success"
+                  id="dropdown-basic"
+                  style={{ width: "20rem" }}
+                >
                   {studyCountry || "Choose Country to study"}
                 </Dropdown.Toggle>
 
