@@ -25,7 +25,7 @@ const Goal = () => {
                   paddingTop: "6px",
                   fontSize: "18px",
                   textAlign: "justify",
-                  zIndex: "999",
+                  zIndex: "2",
                 }}
               >
                 Perfect International Education is dedicated to realizing its
