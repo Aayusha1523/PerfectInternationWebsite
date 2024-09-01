@@ -8,6 +8,7 @@ import Mission from "../assets/Images/missi.webp";
 import Logo from "../assets/Images/Perfect logo.jpg";
 import Vision from "../assets/Images/vision.jpeg";
 
+
 const About = () => {
   return (
     <>

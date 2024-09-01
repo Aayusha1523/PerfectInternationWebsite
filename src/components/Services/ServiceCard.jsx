@@ -1,9 +1,22 @@
+import "../../style/Services.css"
+
 import React from 'react'
+import { Col, Container, Row } from "react-bootstrap";
 
 const ServiceCard = () => {
   return (
-    <div>
-      xxxxx
+    <div className="service">
+      <Container>
+        <Rol lg="7" md="3">
+          <Col>
+
+          </Col>
+        </Rol>
+
+
+      </Container>
+
+     
     </div>
   )
 }
