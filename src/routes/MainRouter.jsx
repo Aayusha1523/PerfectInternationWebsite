@@ -2,7 +2,7 @@ import React from "react";
 
 import About from "../pages/About";
 import MainLayout from "../pages/MainLayout";
-import Register from "../pages/Register";
+import Test from "../pages/Test";
 
 const MainRouter = [
   {
@@ -18,9 +18,10 @@ const MainRouter = [
         element: <div>Contact</div>,
       },
       {
-        path: "register",
-        element: <Register />,
-      },
+        path:"test",
+        element:<Test/>
+      }
+      
     ],
   },
 ];
