@@ -3,7 +3,7 @@ import React from "react";
 import About from "../pages/About";
 import MainLayout from "../pages/MainLayout";
 import Register from "../pages/Register";
-import Testprep from "../pages/Testprep";
+
 
 
 const MainRouter = [
@@ -23,10 +23,7 @@ const MainRouter = [
         path: "register",
         element: <Register />,
       },
-      {
-        path:"Testprep",
-        element:<Testprep/>,
-      }
+      
     
 
     ],
