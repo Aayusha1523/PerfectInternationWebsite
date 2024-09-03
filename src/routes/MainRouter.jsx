@@ -4,8 +4,6 @@ import About from "../pages/About";
 import MainLayout from "../pages/MainLayout";
 import Register from "../pages/Register";
 
-
-
 const MainRouter = [
   {
     path: "/",
@@ -24,11 +22,9 @@ const MainRouter = [
         element: <Register />,
       },
       
-    
 
     ],
   },
-]
+];
 
 export default MainRouter;
-
