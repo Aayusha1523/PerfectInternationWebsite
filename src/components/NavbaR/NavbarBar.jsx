@@ -32,7 +32,7 @@ const NavbarBar = () => {
           </li>
           <li>
             {" "}
-            <a href="#course"> Course</a>
+            <a href="/gallery"> Gallery</a>
           </li>
           <li>
             {" "}

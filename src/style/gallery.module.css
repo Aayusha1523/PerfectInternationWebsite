@@ -1,0 +1,15 @@
+.galleryCon {
+  width: 500px;
+  height: 500px;
+}
+
+.imgHover {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.galleryCon:hover {
+  width: 600px;
+  transition: 0.7s all ease-in-out;
+}

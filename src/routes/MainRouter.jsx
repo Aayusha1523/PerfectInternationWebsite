@@ -1,6 +1,7 @@
 import React from "react";
 
 import About from "../pages/About";
+import Gallery from "../pages/Gallery";
 import MainLayout from "../pages/MainLayout";
 import Register from "../pages/Register";
 
@@ -21,9 +22,12 @@ const MainRouter = [
         path: "register",
         element: <Register />,
       },
+      {
+        path: "gallery",
+        element: <Gallery />,
+      },
     ],
   },
 ];
 
 export default MainRouter;
-
