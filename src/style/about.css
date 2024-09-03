@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: center;
   height: 70svh;
+  z-index: -99;
   width: 100%;
   filter: blur(2px);
   display: grid;
