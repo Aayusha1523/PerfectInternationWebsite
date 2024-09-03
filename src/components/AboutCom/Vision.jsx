@@ -8,7 +8,7 @@ const Vision = () => {
     <div style={{ paddingTop: "2rem" }} className="vision">
       <Container>
         <Row>
-          <Col className="Intro" lg="7" md="3">
+          <Col className="Intro" lg="7" md="3" data-aos="fade-left">
             <h4 style={{ color: "darkblue", fontSize: "44px" }}>VISION</h4>
             <p
               style={{
@@ -35,6 +35,7 @@ const Vision = () => {
               className=" Vision"
               style={{ width: "300px", height: "300px", paddingTop: "50px" }}
               src={visionImg}
+              data-aos="fade-right"
             ></img>
           </Col>
         </Row>

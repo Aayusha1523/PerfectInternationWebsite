@@ -15,13 +15,13 @@ const About = () => {
       {/* THE INTRODUCTION ALONG WITH LOGO */}
       <Container>
         <Row>
-          <Col lg="7" md="3">
+          <Col lg="7" md="3" data-aos="fade-left">
             {" "}
             <p style={{ color: "darkblue", fontSize: "28px" }}>
               Perfect International Consultancy: Your Gateway to Global
               Education
             </p>
-            <p style={{ fontSize: "18px" }}>
+            <p style={{ fontSize: "20px" }}>
               {" "}
               Welcome to Perfect International Consultancy, your trusted partner
               in realizing academic dreams abroad. With a steadfast commitment
@@ -35,9 +35,10 @@ const About = () => {
             <img
               className=" Logo"
               style={{
-                width: "200px",
-                height: "200px",
+                width: "300px",
+                height: "300px",
               }}
+              data-aos="fade-right"
               src={LogoP}
             />
           </Col>

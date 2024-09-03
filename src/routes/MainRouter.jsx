@@ -1,6 +1,7 @@
 import React from "react";
 
 import About from "../pages/About";
+import Contact from "../pages/Contact";
 import Gallery from "../pages/Gallery";
 import MainLayout from "../pages/MainLayout";
 import Register from "../pages/Register";
@@ -17,7 +18,7 @@ const MainRouter = [
       },
       {
         path: "contact",
-        element: <div>Contact</div>,
+        element: <Contact />,
       },
       {
         path: "register",

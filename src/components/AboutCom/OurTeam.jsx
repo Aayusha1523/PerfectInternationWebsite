@@ -6,12 +6,18 @@ import teamInfo from "../about/teamInfo";
 
 const OurTeam = () => {
   return (
-    <Container>
+    <Container style={{ padding: "7rem 0" }}>
       <h1 style={{ alignItems: "center" }}>OUR TEAM</h1>
       <Row>
         {teamInfo.map((item) => {
           return (
-            <Col className="people" lg="2" md="2" key={item.id}>
+            <Col
+              className="people"
+              lg="2"
+              md="2"
+              key={item.id}
+              data-aos="flip-right"
+            >
               <img
                 style={{ width: "200px", padding: "15px" }}
                 // src={Vision}

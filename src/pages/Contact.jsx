@@ -5,8 +5,7 @@ import Card from "react-bootstrap/Card";
 import Dropdown from "react-bootstrap/Dropdown";
 
 import style from "../style/register.module.css";
-
-const Register = () => {
+const Contact = () => {
   const [state, handleSubmit] = useForm("mnnaobny");
   const [academicLevel, setAcademicLevel] = useState(""); // Store dropdown value here
   const [studyCountry, setStudyCountry] = useState(""); //store coutry value here
@@ -29,7 +28,7 @@ const Register = () => {
         className={style.mainCard}
       >
         <Card.Header>
-          <h3 style={{ textAlign: "center", color: "blue" }}> Registration</h3>{" "}
+          <h3 style={{ textAlign: "center", color: "blue" }}> Contact</h3>{" "}
         </Card.Header>
         <Card.Body>
           <form onSubmit={handleSubmit}>
@@ -95,7 +94,7 @@ const Register = () => {
                 errors={state.errors}
               />
             </div>
-
+            {/* 
             <div className={style.inputBox}>
               <label htmlFor="academic-level">Previous Academic Level</label>
               <Dropdown onSelect={handleDropdownSelect}>
@@ -127,7 +126,7 @@ const Register = () => {
                 field="academicLevel"
                 errors={state.errors}
               />
-            </div>
+            </div> */}
 
             <div className={style.inputBox}>
               <label htmlFor="Country">Country to Study</label>
@@ -171,4 +170,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Contact;

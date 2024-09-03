@@ -1,14 +1,17 @@
 import React from "react";
 
+import FpiceLogo from "../../assets/Images/PICElogo.jpeg";
 const FooterLogo = () => {
   return (
     <div
       style={{
-        border: "1px solid black",
         height: "200px",
         width: "200px",
         borderRadius: "50%",
-        backgroundImage: " url(/Image/eagle.jpg)",
+        backgroundImage: `url(${FpiceLogo})`,
+        backgroundPosition: "center",
+        // backgroundRepeat: "no-repeat",
+        backgroundSize: "200px",
       }}
     ></div>
   );

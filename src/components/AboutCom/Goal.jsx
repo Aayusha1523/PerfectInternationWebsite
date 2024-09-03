@@ -13,10 +13,11 @@ const Goal = () => {
             <img
               style={{ width: "400px", height: "365px", paddingTop: "110px" }}
               src={GoalImg}
+              data-aos="fade-left"
             ></img>
           </Col>
 
-          <Col className="Intro" md="12" lg="6">
+          <Col className="Intro" md="12" lg="6" data-aos="fade-right">
             <h4 style={{ color: "darkblue", fontSize: "44px" }}>OUR GOAL</h4>
 
             <div className="card">

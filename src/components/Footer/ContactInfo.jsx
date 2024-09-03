@@ -5,7 +5,10 @@ import { MdEmail } from "react-icons/md";
 const ContactInfo = () => {
   return (
     <div>
-      <ul style={{ listStyle: "none" }}>
+      <ul
+        style={{ listStyle: "none", fontSize: "19px", cursor: "pointer" }}
+        className="d-flex flex-column gap-2 "
+      >
         <li>
           <FaLocationDot />
           Head Office,Nepal Office:-Bagbazar,Kathmandu

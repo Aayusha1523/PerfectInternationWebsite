@@ -16,9 +16,9 @@ const Testprep = () => {
       <Container>
         <div className="Ielts">
           <Row>
-            <Col lg="7" md="3">
+            <Col lg="7" md="3" data-aos="fade-right">
               <h1>IELTS</h1>
-              <p style={{ marginTop: "1.5rem" }}>
+              <p style={{ marginTop: "1.5rem", fontSize: "19px" }}>
                 The International English Language Testing System (IELTS) is a
                 globally recognized English proficiency test designed for
                 individuals who wish to study, work, or migrate to countries
@@ -60,9 +60,9 @@ const Testprep = () => {
             </Col>
 
             <Col gx="1" md="2"></Col>
-            <Col lg="7" md="3">
+            <Col lg="7" md="3" data-aos="fade-left">
               <h1>PTE</h1>
-              <p style={{ marginTop: "1.5rem" }}>
+              <p style={{ marginTop: "1.5rem", fontSize: "19px" }}>
                 {" "}
                 The Pearson Test of English (PTE) is a widely recognized English
                 language proficiency exam designed for non-native speakers who
@@ -84,9 +84,9 @@ const Testprep = () => {
 
         <div className="PTE">
           <Row>
-            <Col lg="7" md="3">
+            <Col lg="7" md="3" data-aos="fade-left">
               <h1 style={{ paddingTop: "3rem" }}>TOFEL</h1>
-              <p style={{ marginTop: "1.5rem" }}>
+              <p style={{ marginTop: "1.5rem", fontSize: "19px" }}>
                 {" "}
                 The Test of English as a Foreign Language (TOEFL) is a
                 standardized exam that measures the English language proficiency
@@ -111,6 +111,7 @@ const Testprep = () => {
                 className="Tofel"
                 style={{ width: "400px", height: "350px", paddingTop: "4rem" }}
                 src={Tofel}
+                data-aos="fade-right"
               />
             </Col>
           </Row>
@@ -125,14 +126,15 @@ const Testprep = () => {
                 className="Gre"
                 style={{ width: "400px", height: "350px", paddingTop: "4rem" }}
                 src={Gre}
+                data-aos="fade-right"
               />
             </Col>
 
             <Col gx="1" md="2"></Col>
 
-            <Col lg="7" md="3">
+            <Col lg="7" md="3" data-aos="fade-left">
               <h1 style={{ paddingTop: "3rem" }}>GRE</h1>
-              <p style={{ marginTop: "1.5rem" }}>
+              <p style={{ marginTop: "1.5rem", fontSize: "19px" }}>
                 {" "}
                 The Graduate Record Examination (GRE) is a widely recognized
                 standardized test used primarily for admission to graduate
@@ -153,9 +155,9 @@ const Testprep = () => {
 
         <div className="PTE">
           <Row>
-            <Col lg="7" md="3">
+            <Col lg="7" md="3" data-aos="fade-left">
               <h1 style={{ paddingTop: "2rem" }}>GMAT</h1>
-              <p style={{ marginTop: "1.5rem" }}>
+              <p style={{ marginTop: "1.5rem", fontSize: "19px" }}>
                 {" "}
                 The Graduate Management Admission Test (GMAT) is a standardized
                 test specifically tailored for individuals applying to business
@@ -176,6 +178,7 @@ const Testprep = () => {
                 className="Gmat"
                 style={{ width: "400px", height: "300px", paddingTop: "2rem" }}
                 src={Gmat}
+                data-aos="fade-right"
               />
             </Col>
           </Row>
@@ -194,13 +197,14 @@ const Testprep = () => {
                   marginBottom: "100px",
                 }}
                 src={Duolingo}
+                data-aos="fade-left"
               />
             </Col>
 
             <Col gx="1" md="2"></Col>
-            <Col lg="7" md="3">
+            <Col lg="7" md="3" data-aos="fade-left">
               <h1 style={{ paddingTop: "3rem" }}>Duolingo English Test</h1>
-              <p style={{ marginTop: "1.5rem" }}>
+              <p style={{ marginTop: "1.5rem", fontSize: "19px" }}>
                 {" "}
                 The Duolingo English Test is an innovative online English
                 proficiency exam that has become increasingly popular for its

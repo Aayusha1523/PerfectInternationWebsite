@@ -12,7 +12,7 @@ const Gallery = () => {
     >
       {ImageGallery.map((items) => {
         return (
-          <div key={items.id}>
+          <div key={items.id} data-aos="zoom-in">
             <GalleryCard key={items.id} path={items.imgpath} />
           </div>
         );
