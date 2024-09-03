@@ -4,7 +4,7 @@ import "../../style/services.css";
 
 const ServiceCard = () => {
   return (
-    <section className="min-vh-100 text-center py-5 px-3">
+    <section className="min-vh-100 text-center py-5 px-3 d-flex justify-content-center align-items-center">
       <div className="container">
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-4">
           <div className="col">
