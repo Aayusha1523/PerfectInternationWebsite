@@ -4,6 +4,7 @@ import About from "../pages/About";
 import Gallery from "../pages/Gallery";
 import MainLayout from "../pages/MainLayout";
 import Register from "../pages/Register";
+import Testprep from "../pages/Testprep";
 
 const MainRouter = [
   {
@@ -21,6 +22,10 @@ const MainRouter = [
       {
         path: "register",
         element: <Register />,
+      },
+      {
+        path: "testprep",
+        element: <Testprep />,
       },
       {
         path: "gallery",
