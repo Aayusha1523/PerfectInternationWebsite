@@ -4,7 +4,10 @@ import "../../style/services.css";
 
 const ServiceCard = () => {
   return (
+    
     <section className="min-vh-100 text-center py-5 px-3 d-flex justify-content-center align-items-center">
+    
+    
       <div className="container">
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-4">
           <div className="col">
@@ -12,12 +15,10 @@ const ServiceCard = () => {
               <div className="circle"></div>
               <div className="position-relative pe-5">
                 <h2 className="text-white mb-3 fs-4">
-                  UI/UX <br /> Creative Design
+                  No <br /> Service Charge
                 </h2>
                 <p className="text-muted">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Pellentesque habitant morbi tristique senectus et netus et
-                  malesuada fames.
+                Our premium service is available with no service charge, allowing you to enjoy all the benefits without any additional costs.
                 </p>
               </div>
               <div className="icon"></div>
@@ -28,12 +29,10 @@ const ServiceCard = () => {
               <div className="circle"></div>
               <div className="position-relative ps-5">
                 <h2 className="text-white mb-3 fs-4">
-                  Visual <br /> Graphic Design
+                  Free <br /> Pickup
                 </h2>
                 <p className="text-muted">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Pellentesque habitant morbi tristique senectus et netus et
-                  malesuada fames.
+                Enjoy the convenience of free airport pickup with our services, ensuring a smooth and hassle-free start to your journey.
                 </p>
               </div>
             </div>
@@ -43,12 +42,10 @@ const ServiceCard = () => {
               <div className="circle"></div>
               <div className="position-relative pe-4">
                 <h2 className="text-white mb-3 fs-4">
-                  Strategy & <br /> Digital Marketing
+                  Regular<br /> Mock Tests
                 </h2>
                 <p className="text-muted">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Pellentesque habitant morbi tristique senectus et netus et
-                  malesuada fames.
+                Take advantage of our free mock tests to assess your readiness and boost your confidence before the big exam.
                 </p>
               </div>
             </div>
@@ -58,12 +55,10 @@ const ServiceCard = () => {
               <div className="circle"></div>
               <div className="position-relative ps-5">
                 <h2 className="text-white mb-3 fs-4">
-                  Effective <br /> Business Growth
+                  Career <br /> Counselling
                 </h2>
                 <p className="text-muted">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Pellentesque habitant morbi tristique senectus et netus et
-                  malesuada fames.
+                Our complimentary career counseling services will help you chart a clear path towards your professional goals.
                 </p>
               </div>
             </div>
