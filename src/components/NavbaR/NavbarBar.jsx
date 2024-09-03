@@ -36,7 +36,7 @@ const NavbarBar = () => {
           </li>
           <li>
             {" "}
-            <a href=""> PTE/IETS</a>
+            <a href="/testprep"> Test Preperation</a>
           </li>
           <li>
             {" "}
