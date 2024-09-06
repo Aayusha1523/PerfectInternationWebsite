@@ -18,3 +18,19 @@
   object-fit: cover;
   height: 70svh;
 }
+@media (max-width: 600px) {
+  .customCarousel {
+    margin: 0 1rem;
+  }
+  .customCarousel img {
+    height: 30vh;
+  }
+  .customCarousel .carouselItem {
+    height: 100vh;
+    width: 100;
+  }
+  .howWeOperateImage {
+    width: 400px;
+    height: 400px;
+  }
+}

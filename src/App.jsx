@@ -2,7 +2,7 @@ import "./App.css";
 import "aos/dist/aos.css";
 
 import AOS from "aos";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import MainRouter from "./routes/MainRouter";

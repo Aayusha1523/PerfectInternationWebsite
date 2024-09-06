@@ -25,3 +25,16 @@
   border-radius: 10px;
   border: 1px gray solid;
 }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+  .inputBox {
+    margin: 1rem 0;
+  }
+
+  .mainCard {
+    width: 300px;
+  }
+}

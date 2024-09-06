@@ -8,7 +8,11 @@ const HowWeOperate = () => {
       className="d-flex flex-column justify-content-center align-items-center"
       data-aos="zoom-in"
     >
-      <img src={howWeOperateImage} height={800} />
+      <img
+        src={howWeOperateImage}
+        height={800}
+        className={style.howWeOperateImage}
+      />
     </div>
   );
 };
